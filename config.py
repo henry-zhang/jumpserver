@@ -28,7 +28,7 @@ class Config:
     LOG_DIR = os.path.join(BASE_DIR, 'logs')                                                                                                           
                                                                                                                                                        
     # Database setting, Support sqlite3, mysql, postgres ....                                                                                          
-    # See https://docs.djangoproject.com/en/1.10/ref/settings/#databases                                                                               
+    # See 1https://docs.djangoproject.com/en/1.10/ref/settings/#databases                                                                               
                                                                                                                                                        
     # SQLite setting:                                                                                                                                  
     #DB_ENGINE = 'sqlite3'                                                                                                                             
