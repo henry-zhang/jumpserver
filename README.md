@@ -55,7 +55,18 @@ Jumpserver是一款使用Python, Django开发的开源跳板机系统, 助力互
 
     6. 其它
 
-    整合luna,coco需要nginx来配合, 详见详细安装文档
+    整合luna,coco需要nginx来配合, 
+    $nginx
+    $cd /opt/coco/&& python run_server.py
+    
+    7.docker化运行
+    docker pull henryzhang1/jumpserver
+    docker run --name rds -p 3306:3306 -d mysql
+    docker run --name redis redis
+    docker run -ti --rm  henryzhang1/jumpserver /bin/bash
+    cd /opt/jumpserver/utils &&bash make_migrations.sh
+    
+    
 
 
 ### Usage 使用
