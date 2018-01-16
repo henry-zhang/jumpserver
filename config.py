@@ -36,7 +36,7 @@ class Config:
                                                                                                                                                        
     # MySQL or postgres setting like:                                                                                                                  
     DB_ENGINE = 'mysql'                                                                                                                                
-    DB_HOST = '192.168.207.4'                                                                                                                          
+    DB_HOST = 'mysql01'                                                                                                                          
     DB_PORT = 3306                                                                                                                                     
     DB_USER = 'root'                                                                                                                                   
     DB_PASSWORD = 'root'                                                                                                                               
@@ -48,7 +48,7 @@ class Config:
     HTTP_LISTEN_PORT = 8080                                                                                                                            
                                                                                                                                                        
     # Use Redis as broker for celery and web socket                                                                                                    
-    REDIS_HOST = '192.168.207.4'                                                                                                                       
+    REDIS_HOST = 'redis01'                                                                                                                       
     REDIS_PORT = 6379                                                                                                                                  
     REDIS_PASSWORD = ''                                                                                                                                
     BROKER_URL = 'redis://%(password)s%(host)s:%(port)s/3' % {                                                                                         
