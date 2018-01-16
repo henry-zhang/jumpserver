@@ -26,13 +26,13 @@ Jumpserver是一款使用Python, Django开发的开源跳板机系统, 助力互
 
 ### Install 安装
 
-    1. 安装 Python3
-       略
+    1. 安装 Python3 等基础环境
+     apt-get install -y vim wget gcc automake redis-server git  libssl-dev zlib1g-dev make python3-pip libtiff5-dev libjpeg62-turbo-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python-tk libffi-dev -y python3-gssapi libgss-dev libkrb5-dev libmysql++-dev python-dev libldap2-dev libsasl2-dev libssl-dev nginx sshpass
 
     2. 安装依赖
 
     ```
-    $ cd requirements && yum -y install $(cat rpm_requirements.txt) && pip install -r requirements.txt
+    $ cd requirements && pip install -r requirements.txt
     ```
 
     3. 修改配置文件
@@ -41,11 +41,11 @@ Jumpserver是一款使用Python, Django开发的开源跳板机系统, 助力互
     $ cp config_example.py config.py
     ```
 
-    4. 修改表结构
+    4. 导入数据结构
 
-    ```
-    $ cd apps && python manage.py makemigrations && python manage.py migrate
-    ```
+    ``` 
+    $ cd utils &&bash make_migrations.sh
+    ```
 
     5. 运行
 
